@@ -1,43 +1,81 @@
-# PrimeAgenda
+# ✨ Prime Agenda
 
-Sistema profissional de agendamentos desenvolvido em Flutter + Firebase.
+Sistema de agendamento moderno desenvolvido para facilitar o gerenciamento de horários, clientes e serviços de forma prática e organizada.
 
-## Recursos
+O projeto foi criado com foco em experiência do usuário, responsividade e automação de agendamentos para negócios como barbearias, salões e atendimentos personalizados.
 
-- Agendamento online
+---
+
+# 🚀 Funcionalidades
+
+## 👤 Cliente
+- Cadastro e login
+- Agendamento de horários
+- Escolha de serviços
+- Visualização de horários disponíveis
+- Histórico de agendamentos
+- Interface moderna e intuitiva
+
+## 🛠️ Administração
+- Gerenciamento de clientes
+- Controle de agendamentos
+- Cadastro de serviços
+- Upload de imagens
 - Painel administrativo
-- Gestão de profissionais
-- Gestão de serviços
-- Controle de horários
-- Notificações em tempo real
-- Assinaturas e planos
-- Web + Android
-- Firebase Authentication
-- Firestore Database
-- Firebase Storage
-- Firebase Cloud Messaging
+- Atualização de horários e disponibilidade
 
-## Tecnologias
+---
+
+# 💻 Tecnologias Utilizadas
 
 - Flutter
-- Firebase
-- Firestore
-- Cloud Functions
-- Firebase Messaging
+- Dart
+- Firebase Authentication
+- Cloud Firestore
 - Firebase Storage
-- Asaas
+- Material Design
 
-## Plataformas
+---
 
-- Android
-- Web
+# 🔥 Recursos do Sistema
 
-## Estrutura
+- Autenticação de usuários
+- Banco de dados em tempo real
+- Armazenamento em nuvem
+- Interface responsiva
+- Integração com Firebase
+- Gerenciamento de dados em tempo real
 
-```txt
-lib/
-├── screens/
-├── widgets/
-├── services/
-├── models/
-└── firebase_options.dart
+---
+
+# 📱 Objetivo do Projeto
+
+O Prime Agenda foi desenvolvido para oferecer uma solução prática e moderna para gerenciamento de agendamentos, ajudando negócios a organizarem atendimentos e melhorarem a experiência dos clientes.
+
+---
+
+# 📸 Screenshots
+
+<p align="center">
+  <img src="assets/login.png" width="250"/>
+  <img src="assets/home-admin.png" width="250"/>
+  <img src="assets/home-cliente.png" width="250"/>
+</p>
+
+---
+
+# ⚙️ Como executar o projeto
+
+- Clone o repositório | git clone <https://github.com/Gleicekeli12/primeAgenda.git>
+
+- Acesse a pasta | cd primeAgenda
+
+- Instale as dependências | flutter pub get
+
+- Execute o projeto | flutter run
+
+---
+
+# 📫 Contato
+- LinkedIn: <https://www.linkedin.com/in/gleice-keli/>
+- E-mail: gleicekeli8474@gmail.com
