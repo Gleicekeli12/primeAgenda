@@ -1,0 +1,47 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+   function isAdmin() {
+  return isSignedIn()
+    && firestore.exists(/databases/(default)/documents/usuarios/$(request.auth.uid))
+    && firestore.get(/databases/(default)/documents/usuarios/$(request.auth.uid)).data.tipo == "admin";
+}
+
+    // ================= PROFISSIONAIS =================
+   match /profissionais/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ================= SERVIÇOS =================
+   match /servicos/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ================= CATEGORIAS =================
+   match /categorias/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ================= USUÁRIOS =================
+    match /usuarios/{userId}/{allPaths=**} {
+      allow read: if true;
+
+      allow write: if isSignedIn()
+        && request.auth.uid == userId;
+    }
+
+     // ================= WEB IMAGENS =================
+match /{allPaths=**} {
+  allow read: if true;
+}
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "316592305950",
+    "project_id": "primeagenda-app",
+    "storage_bucket": "primeagenda-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316592305950:android:a283f707c155fb6d6abb0f",
+        "android_client_info": {
+          "package_name": "com.primeagenda.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316592305950-4cir7l0bvu53kc61jr6i0o2n7gmvf170.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.primeagenda.app",
+            "certificate_hash": "d042f8d8cf8a906ce8ff19a199227d3b9a52c58c"
+          }
+        },
+        {
+          "client_id": "316592305950-0jsfq0f4144tajilrl4obk6c968oaj87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh52nchYBnxzWv8pon15JsLFVJXzfBfV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316592305950-0jsfq0f4144tajilrl4obk6c968oaj87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

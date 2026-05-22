@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://primeagenda-app.web.app", "http://localhost:5000", "http://localhost:8080"],
+    "method": ["GET", "HEAD", "OPTIONS"],
+    "responseHeader": ["Content-Type", "Access-Control-Allow-Origin"],
+    "maxAgeSeconds": 3600
+  }
+]

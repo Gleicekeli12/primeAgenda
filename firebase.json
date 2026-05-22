@@ -1,0 +1,50 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "primeagenda-app",
+          "appId": "1:316592305950:android:a283f707c155fb6d6abb0f",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "firestore": { "rules": "firestore.rules" },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "primeagenda-app",
+          "configurations": {
+            "android": "1:316592305950:android:a283f707c155fb6d6abb0f",
+            "web": "1:316592305950:web:026f03c29b25463f6abb0f"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ],
+  "firestore": {
+    "database": "(default)",
+    "location": "southamerica-east1",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": { "rules": "storage.rules" },
+  "hosting": {
+    "site": "primeagenda-app",
+    "public": "build/web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+  }
+}
